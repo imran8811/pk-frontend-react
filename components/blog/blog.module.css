@@ -1,0 +1,132 @@
+.posts {
+	padding:20px 40px;
+	overflow:hidden;
+}
+.detailPost {
+	padding:0 40px 30px;
+}
+.posts .singlePost{
+	padding:0 0 30px;
+	border-bottom:2px solid #ccc;
+	overflow:hidden;
+}
+.detailPost .singlePost {
+	margin:0 0 30px;
+}
+.posts span {padding: 0 30px 10px 0;}
+.posts .imageHolder{
+	float:left;
+	width:30%;
+}
+.detailPost .imageHolder, .detailPost .content p {margin:0 0 20px;}
+.detailPost .imageHolder img,
+.posts .imageHolder img{
+	display:block;
+	width:70%;
+	height:auto;
+	border:5px solid #fff;
+	margin: 0 auto;
+}
+.detailPost .textArea {
+	font-size: 22px;
+	line-height: 30px;
+}
+.posts .textArea{
+	float:right;
+	width: 68%;
+}
+.detailPost .singlePost h2,
+.posts .singlePost h2{
+	margin:0 0 15px;
+}
+.posts .author {
+	display:inline-block;
+	margin:0 0 10px;
+}
+.posts .outer {overflow:hidden;}
+.readMore {
+	float:right;
+	padding:5px 15px;
+	background:#06F;
+	border-radius:5px;
+	margin:20px 0 0;
+	color:#fff;
+	font-weight:bold;
+}
+.readMore:hover {
+	color:#fff;
+	background:#08f;
+	text-decoration:none;
+}
+.pageDetails {
+	overflow: hidden;
+	padding: 30px 0 0;
+	margin: 0 0 100px;
+}
+.pageDetails .imageArea {
+	float: left;
+	width: 40%;
+}
+.pageDetails .imageArea img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.pageDetails .detailsArea {
+	float: right;
+	width: 50%;
+}
+.pageDetails .detailsArea > strong{
+	display: block;
+	margin: 0 0 15px;
+}
+.pageDetails ul {
+	overflow: hidden;
+	margin: 0 0 20px;
+}
+.pageDetails ul li {
+	overflow: hidden;
+	margin: 0 0 10px;
+}
+.pageDetails ul li strong {
+	float: left;
+	width: 30%;
+	color: #09f;
+}
+.pageDetails ul li span {
+	float: left;
+	width: 50%;
+}
+.pageDetails .your-inquiry {
+	display: block;
+	width: 180px;
+	padding: 10px 10px;
+	color: #fff;
+	background: #09f;
+	text-align: center;
+	border-radius: 5px;
+	margin: 0 0 30px;
+}
+.pageDetails .your-inquiry:hover, .pageDetails .btn-back:hover {
+	text-decoration: none;
+}
+.pageDetails .btn-back-wrap {overflow: hidden;}
+.pageDetails .btn-back {
+	float: right;
+	width: 100px;
+	color: #fff;
+	background: #333;
+	padding: 10px 10px 10px 30px;
+	text-align: center;
+	border-radius: 5px;
+	position: relative;
+}
+.pageDetails .btn-back:after {
+	content: "";
+	position: absolute;
+	background: url("/images/arrow-back.png") no-repeat;
+	left: 14px;
+	top: 14px;
+	width: 20px;
+	height: 14px;
+}
