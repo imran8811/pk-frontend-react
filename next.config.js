@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  trailingSlash: true,
-  basePath: '/pknew'
+  trailingSlash: true
 }
 
 module.exports = nextConfig
