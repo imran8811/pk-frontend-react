@@ -20,7 +20,7 @@ const Shop : FC = () => {
   }, [isReady])
 
   const getProducts = () => {
-    axios.post(GET_PRODUCTS).then(res => {
+    axios.get(GET_PRODUCTS).then(res => {
       setProducts(res.data)
     })
   }
@@ -101,11 +101,11 @@ const Shop : FC = () => {
         <div className={cls(styles.shopListing, 'col-lg-10')}>
           <h2 className="text-center mb-4">Jeans Pant for Men</h2>
           <div className="row">
-            { products && products.map((product) => {
+            { products && products.map((product, index) => {
               return (
-                <div className="col-lg-3 mb-3">
-                  <a href={"/wholesale-shop/product-details/"+product.article_no} className="d-block mb-3" target="_blank">
-                    <img 
+                <div className="col-lg-3 mb-3" key={index}>
+                  <a href={"/wholesale-shop/product-details/"+product.article_no} className="d-block mb-3" target="_blank" rel="noreferrer">
+                    <img
                       src={basePath+product.product_images.path+'/'+product.product_images.name} 
                       alt={product.product_images.path} 
                       height="370"

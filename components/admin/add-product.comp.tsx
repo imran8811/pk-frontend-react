@@ -4,9 +4,11 @@ import axios from 'axios'
 import { ADD_PRODUCT, IMAGE_UPLOAD } from '../../endpoints'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useRouter } from 'next/dist/client/router';
 
 const AddProduct: FC = () => {
   const { register, handleSubmit, getValues, watch, formState: { errors }} = useForm();
+  const router = useRouter();
   
   const onSubmit = async(data:any) => {
     await axios({

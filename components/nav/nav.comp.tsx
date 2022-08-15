@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FC } from "react"
 import styles from '../header/header.module.css'
 
@@ -5,12 +6,12 @@ const Nav: FC = () => {
   return (
     <nav className={styles.mainMenu}>
       <ul>
-        <li><a href="/wholesale-shop">Wholesale Shop</a></li>
-        <li><a href="/about">About us</a></li>
-        <li><a href="/factory">Factory</a></li>
-        <li><a href="/certifications">Certifications</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/contact">Contact us</a></li>
+        <li><Link href="/wholesale-shop">Wholesale Shop</Link></li>
+        <li><Link href="/about">About us</Link></li>
+        <li><Link href="/factory">Factory</Link></li>
+        <li><Link href="/certifications">Certifications</Link></li>
+        <li><Link href="/blog">Blog</Link></li>
+        <li><Link href="/contact">Contact us</Link></li>
       </ul>
     </nav>
   )

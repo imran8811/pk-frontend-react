@@ -7,10 +7,8 @@ const ContactPage: NextPage = () => {
   return (
     <>
       <div className='container'>
-        <div className='row'>
-          <Header></Header>
-          <Contact></Contact>
-        </div>
+        <Header></Header>
+        <Contact></Contact>
       </div>
       <Footer></Footer>
     </>

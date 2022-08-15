@@ -3,8 +3,9 @@ import FAQS from '../faqs/faqs.comp'
 import RatingReviews from '../rating-reviews/rating-reviews.comp'
 import Tagline from '../tagline/tagline.comp'
 import ProductListing from '../product-listing/product-listing.comp'
+import { ITaglineProps } from '../../models'
 
-const JeansManufacturers: FC = ({keyword, text}) => {
+const JeansManufacturers: FC<ITaglineProps> = ({keyword, text}) => {
   return (
     <div className="row">
       <Tagline headingText={keyword} paraText={text} />
@@ -12,14 +13,22 @@ const JeansManufacturers: FC = ({keyword, text}) => {
       <RatingReviews />
       <FAQS />
       <div className="mb-5">
-        <p className="mb-3">Running a successful denim clothing retail chain always requires many connections with the best wholesale denim suppliers. They can offer excellent and high-quality material at reasonable rates with speedy delivery. Pkapparel.com is one such supplier as its state-of-the-art apparel manufacturing facility caters to chain stores, brands, boutiques, and new and experienced designers interested in sourcing high-quality denim clothing.</p>
-        <p className="mb-3">Pkapparel.com is one of the largest jeans distributors when it comes to this context. It also has a partnership with many manufacturers worldwide, which allows them to cater to the growing requirements for wholesale denim jeans for both women and men.</p>
-        <p className="mb-3">Let's look at how high-quality boutique wholesale clothing can be made and how Pkapparel.com can help you in this quest:</p>
-        <h2 className="mb-3">CMT or Full Package Production, Get Either</h2>
-        <p className="mb-3">Boutique wholesale clothing in high quality can be procured in many ways. You can start with a sew and cut manufacturer who will produce the clothes as per the required specifications and designs provided by you, or you can choose a full package extensive clothing supplier. Pk Apparel offers these both options to customers with its complete services such as design, dyeing and washing of denim, wholesale fabric sourcing, sample making, patterns and tech packs, trim development, and even drop shipping some cases.</p>
-        <h2 className="mb-3">Quality is Important</h2>
-        <p className="mb-3">Distributors of good quality wholesale clothing make sure that not only the fabric used for manufacturing wholesale jeans for women and men is unique premium denim, but the optional accessories such as thread, buttons, and other trims used are also of high quality.</p>
-        <p className="mb-3">So, if you are looking for a high-quality denim jeans distributor and provider, Pk apparel makes sure that your search ends. With its high-quality material and fairest of prices, it makes sure that the sole purpose of its business is the satisfaction of its customers.</p>
+        <h2 className="mb-4">Jeans Manufacturers Are In Competition, But Who Wins?</h2>
+        <p className="mb-4">Did you know around 69% of US entrepreneurs start their business from home? The digital world is whole new, its own kind of planet where people instead of carrying out raids on their opponents warehouses, wage war with marketing tactics.</p>
+        <p className="mb-4">The best one wins! </p>
+        <p className="mb-4">Now, it should be clarified that who is the best one? What it takes to be considered best one? </p>
+        <p className="mb-4">Jeans is one of the sub-types of apparel industry and is considered as necessary item of our wardrobe. If you are one of the <strong>Jeans Manufacturers</strong>, then you may relate to a lot of things that this article holds for you. </p>
+        <p>We know how much important jeans is for our clothing. We wear it almost every day, at work, home, party, educational institutes and whatnot! When such thing is in so much demand, it is natural to have competition among the manufacturers.</p>
+        <p className="mb-4">The question arise who is going to counter all those hurdles and win their customer&apos;s hearts? There are many ways to be successful, have a look at some of them:</p>
+        <ul>
+          <li>Make sure the material of your jeans is pure and up-to-date. </li>
+          <li>Your marketing campaigns are relatable and engaging</li>
+          <li>Know market trends all the time. </li>
+          <li>Hire competent individuals who are passionate about their job.</li>
+          <li>Customer care should be available 24/7 to cater to the queries of consumers.</li>
+          <li>Come up with discount options and sale every now and then to attract new customers and retain the old ones.</li>
+        </ul>
+        <p>One thing should always stay there - put your customer first and see how quickly things changes in your favor.</p>
       </div>
     </div>
   )}

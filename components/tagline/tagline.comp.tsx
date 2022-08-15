@@ -2,7 +2,12 @@ import type { NextPage } from 'next'
 import styles from './tagline.module.css';
 import cls from 'classnames'
 
-const Tagline: NextPage = ({headingText, paraText}) => {
+interface ITaglineProps {
+  headingText : string,
+  paraText : string
+}
+
+const Tagline: NextPage<ITaglineProps> = ({headingText, paraText}:ITaglineProps) => {
   return (
     <div className={cls(styles.tagline, 'mb-5')}>
       <div className='col-6 text-center pt-5 text-white'>

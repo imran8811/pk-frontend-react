@@ -42,9 +42,9 @@ const Products: FC = () => {
     <div className='col-lg-12 mt-5 mb-5'>
       <div className='row justify-content-center'>
         <h2 className='text-center mb-3'>Products</h2>
-          { productsRef.current && productsRef.current.map((product:any) => {
+          { productsRef.current && productsRef.current.map((product:any, index) => {
               return (
-                <div className='col-3'>
+                <div className='col-3' key={index}>
                   <ul className='list-group'>
                     <li className='list-item'>
                       <span>{product.article_no}</span>

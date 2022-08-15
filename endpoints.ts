@@ -1,7 +1,8 @@
-const baseRoute = 'http://localhost:8000/api';
-// const baseRoute = 'https://www.pkapparel.com/pknew/api';
+// const baseRoute = 'http://localhost:8000/api';
+const baseRoute = 'https://www.pkapparel.com/api';
 
-export const basePath = 'http://localhost:8000';
+// export const basePath = 'http://localhost:8000';
+export const basePath = 'https://www.pkapparel.com';
 export const ADMIN_LOGIN = `${baseRoute}/admin/login`;
 export const ADD_PRODUCT = `${baseRoute}/admin/product/new`;
 export const GET_PRODUCTS = `${baseRoute}/admin/products`;
@@ -15,5 +16,5 @@ export const ADMIN_LOGOUT = `${baseRoute}/admin/logout`;
 export const GET_PRODUCTS_LISTING = `${baseRoute}/product-listing`;
 
 //internal routes
-export const PRODUCT_DETAILS = '/wholesale-shop/prodict-details'
+export const PRODUCT_DETAILS = '/wholesale-shop/product-details'
 export const WHOLESALE_SHOP = '/wholesale-shop'

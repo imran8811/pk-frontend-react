@@ -3,7 +3,7 @@ import styles from './home.module.css'
 import cls from 'classnames'
 import FAQS from '../faqs/faqs.comp'
 import RatingReviews from "../rating-reviews/rating-reviews.comp";
-import KeywordNav from "../keyword-nav/keyword-nav.comp";
+import Keywords from "../keywords/keywords.comp";
 import HomeBanner from "../home-banner/home-banner.comp";
 import { WHOLESALE_SHOP } from "../../endpoints";
 
@@ -77,19 +77,19 @@ const Home : FC = () => {
             </a>
           </li>
           <li className="col-lg-3">
-            <a href={WHOLESALE_SHOP+"?category=women&type=jeans-pant"} className={styles.innerManufacture}>
+            <a href={WHOLESALE_SHOP+"?category=women&type=jeans-jacket"} className={styles.innerManufacture}>
               <img src="/images/women-jacket.jpg" alt="Jeans Jackets" />
               <span className={styles.productCategory}>Jeans Jackets</span>
             </a>
           </li>
           <li className="col-lg-3">
-            <a href={WHOLESALE_SHOP+"?category=women&type=jeans-pant"} className={styles.innerManufacture}>
+            <a href={WHOLESALE_SHOP+"?category=women&type=jeans-shirt"} className={styles.innerManufacture}>
               <img src="/images/women-shirt.jpg" alt="jeans shirts" />
               <span className={styles.productCategory}>Jeans Shirts</span>
             </a>
           </li>
           <li className="col-lg-3">
-            <a href={WHOLESALE_SHOP+"?category=women&type=jeans-pant"} className={styles.innerManufacture}>
+            <a href={WHOLESALE_SHOP+"?category=women&type=jeans-short"} className={styles.innerManufacture}>
               <img src="/images/women-short.jpg" alt="jeans shorts" />
               <span className={styles.productCategory}>Jeans Shorts</span>
             </a>
@@ -105,7 +105,7 @@ const Home : FC = () => {
           </div>
           <div className="col-lg-4">
             <strong className={styles.subHead}>Best Prices</strong>
-            <p>Our prices are unbeatable, Our FOB prices for best quality jeans pants ranges from $4 - $8 depends on buyer's styling and design requirements.</p>
+            <p>Our prices are unbeatable, Our FOB prices for best quality jeans pants ranges from $4 - $8 depends on buyer&apos;s styling and design requirements.</p>
           </div>
           <div className="col-lg-4">
             <strong className={styles.subHead}>On Time Shipment</strong>
@@ -113,9 +113,6 @@ const Home : FC = () => {
           </div>
         </div>
       </div>
-      <RatingReviews></RatingReviews>
-      <FAQS></FAQS>
-      <KeywordNav></KeywordNav>
     </div>
   )
 }

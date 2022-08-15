@@ -4,8 +4,9 @@ import axios from "axios"
 import { GET_PRODUCTS_LISTING, basePath } from "../../endpoints"
 import { Product } from "../../models"
 import { useRouter } from "next/dist/client/router";
+import { IProductListing } from "../../models/productListing.model"
 
-const ProductListing : FC = ({category, type, numberOfRecords}) => {
+const ProductListing : FC<IProductListing> = ({category, type, numberOfRecords}) => {
   const [productListing, setProductListing] = useState<Product[]>();
   const { isReady } = useRouter();
 
@@ -29,7 +30,7 @@ const ProductListing : FC = ({category, type, numberOfRecords}) => {
         return (
           <>
             <div className="col-lg-3 mb-3">
-              <a href={"/wholesale-shop?category"+category+"&type="+type} className="d-block mb-3" target="_blank">
+              <a href={"/wholesale-shop?category"+category+"&type="+type} className="d-block mb-3" target="_blank" rel="noreferrer">
                 <img 
                   src={basePath+product.product_images.path+'/'+product.product_images.name} 
                   alt={product.product_images.path} 

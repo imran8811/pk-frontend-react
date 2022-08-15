@@ -7,10 +7,8 @@ const BlogPage: NextPage = () => {
   return (
     <>
       <div className='container'>
-        <div className='row'>
-          <Header></Header>
-          <Blog></Blog>
-        </div>
+        <Header></Header>
+        <Blog></Blog>
       </div>
       <Footer></Footer>
     </>

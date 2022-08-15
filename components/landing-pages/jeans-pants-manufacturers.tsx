@@ -3,8 +3,9 @@ import FAQS from '../faqs/faqs.comp'
 import RatingReviews from '../rating-reviews/rating-reviews.comp'
 import Tagline from '../tagline/tagline.comp'
 import ProductListing from '../product-listing/product-listing.comp'
+import { ITaglineProps } from '../../models'
 
-const JeansPantsManufacturers: FC = ({keyword, text}) => {
+const JeansPantsManufacturers: FC<ITaglineProps> = ({keyword, text}) => {
   return (
     <div className="row">
       <Tagline headingText={keyword} paraText={text} />
@@ -17,7 +18,7 @@ const JeansPantsManufacturers: FC = ({keyword, text}) => {
         <p className="mb-3">If you are looking for best <strong>jeans pants manufacturers</strong> then you have come to the right place. We deal in manufacturing of high quality jeans pants, jeans jackets, and jeans overalls. PK Apparel is one of the best <strong>jeans pants manufacturers</strong>.</p>
         <p className="mb-3">It certainly enjoys a competitive edge over other companies in the industry with the help of our unrivaled service features. With years of experience, we have successfully built a reputed image and position in the market. You will certainly not be disappointed once you make your first purchase because we believe in establishing long term business relations with our respected customers.</p>
         <p className="mb-3"><strong>HOW PK APPAREL COMPLIMENTS AND ADDS TO YOUR PERSONALITY</strong></p>
-        <p className="mb-3">Your attire and outlook is a major factor in building your style. When people approach you, they usually develop an opinion at first by the clothes that you're wearing. This, therefore, emphasizes the importance of clothing and how it affects your image in public. PK Apparel targets that very need and offers a stylish range of jeans manufactured to your requirements. You can choose the right color and design from the large variety available to perfect your outlook. Jeans manufactured by PK Apparel will greatly help you to improve your dressing style.</p>
+        <p className="mb-3">Your attire and outlook is a major factor in building your style. When people approach you, they usually develop an opinion at first by the clothes that you&apos;re wearing. This, therefore, emphasizes the importance of clothing and how it affects your image in public. PK Apparel targets that very need and offers a stylish range of jeans manufactured to your requirements. You can choose the right color and design from the large variety available to perfect your outlook. Jeans manufactured by PK Apparel will greatly help you to improve your dressing style.</p>
         <h3>THE BEST CHOICE FOR YOU</h3>
         <p className="mb-3">What is it that you look for in a good clothing brand? Quality and value! PK Apparel promises to offer the best quality jeans in the most affordable price that maximizes the value you get. If you really want a brand that delivers consistent quality and helps you make a style statement wherever you go, then PK Apparel is surely the name to trust. So, make your purchase today and see for yourself the excellent quality and value offered here at PK Apparel.</p>
       </div>

@@ -3,8 +3,9 @@ import FAQS from '../faqs/faqs.comp'
 import RatingReviews from '../rating-reviews/rating-reviews.comp'
 import Tagline from '../tagline/tagline.comp'
 import ProductListing from '../product-listing/product-listing.comp'
+import { ITaglineProps } from '../../models'
 
-const KevlarJeansManufacturers: FC = ({keyword, text}) => {
+const KevlarJeansManufacturers: FC<ITaglineProps> = ({keyword, text}) => {
   return (
     <div className="row">
       <Tagline headingText={keyword} paraText={text} />
@@ -20,7 +21,7 @@ const KevlarJeansManufacturers: FC = ({keyword, text}) => {
         <h3>Fit Jeans for Motorcycles</h3>
         <p className='mb-3'>Kevlar jeans manufacturers produce jeans for motorcycles of all ages and sizes. However, which jeans fits you best is dependent upon your own experience. Denim jeans cannot function properly if they are not of the right fit. Therefore, the measurement of in seam and waist size plays a vital role to figure out which jeans won’t provide protection to the wrong parts during a crash leaving you injured.</p>
         <h4>Dressed up to the nines</h4>
-        <p className='mb-3'>It doesn't necessarily mean that the jeans that provide protection cannot have a sense of style to it. <strong>Kevlar Jeans Manufacturers</strong> make sure that the denim jeans you are buying is in fashion and will remain a trend for the motorcycles.</p>
+        <p className='mb-3'>It doesn&apos;t necessarily mean that the jeans that provide protection cannot have a sense of style to it. <strong>Kevlar Jeans Manufacturers</strong> make sure that the denim jeans you are buying is in fashion and will remain a trend for the motorcycles.</p>
         <p className='mb-3'>There are different types of Kevlar jeans with different styles. One of them is the jeans that can be worn all day in different situations. However, they offer limited protection against serious road injuries. Therefore, they are restricted to casual road motorcycles.</p>
         <p className='mb-3'>Such types of jeans are not for dedicated heavy motorcycles as they require jeans that are flawless in all functions. These types of jeans are weather resistant, has reflective piping, provide ventilation and fit perfectly. They also include knee pucks for extra safety. <strong>Kevlar Jeans Manufacturers</strong> also provide adjustable knee armor for heavy motorcycles. </p>
         <p className='mb-3'>Each type of biker requires a different style, design and protection. Based upon their passion for biking, we make sure there are no compromises when it comes to their life. Our brand holds the trust of reputed companies and clients. We worry for the motorcycles and produce quality Kevlar jeans.</p>

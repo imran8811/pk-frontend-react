@@ -1,12 +1,14 @@
 {
   "name": "pk-react",
+  "homepage": "https://www.pkapparel.com/pknew",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "node server.js",
+    "lint": "next lint",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@rpldy/upload-button": "^1.0.1",

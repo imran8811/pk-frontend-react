@@ -11,8 +11,8 @@ const Footer: FC = () => {
           <Nav></Nav>
         </div>
         <ul className={styles.socialNetwork}>
-          <li><a href="https://www.facebook.com/pkapparel2" target="_blank">facebook</a></li>
-          <li className={styles.linkedin}><a href="https://www.linkedin.com/company/pkapparel" target="_blank">Linkedin</a></li>
+          <li><a href="https://www.facebook.com/pkapparel2" target="_blank" rel="noreferrer">facebook</a></li>
+          <li className={styles.linkedin}><a href="https://www.linkedin.com/company/pkapparel" rel="noreferrer" target="_blank">Linkedin</a></li>
         </ul>
         <p className="text-center text-white pb-3 mb-0"><strong>&nbsp;&copy;&nbsp;PK Apparel | All Rights Reserved 2022</strong></p>
       </div>
