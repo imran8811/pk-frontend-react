@@ -2,28 +2,16 @@ import { FC, useEffect, useState } from "react"
 import cls from 'classnames'
 import styles from './shop.module.css'
 import axios from "axios"
-import { GET_PRODUCTS, basePath, SEARCH_PRODUCTS } from "../../endpoints"
+import { basePath, SEARCH_PRODUCTS } from "../../endpoints"
 import { Product } from "../../models"
 import { useForm } from 'react-hook-form'
 import { useRouter } from "next/dist/client/router";
 
-const Shop : FC = () => {
-  const [products, setProducts] = useState<Product[]>();
+const Shop : FC = (props:any) => {
+  const [products, setProducts] = useState<Product[]>(props.data);
   const { register, handleSubmit, getValues, watch, formState: { errors }} = useForm();
   const router = useRouter();  
   const { query, isReady } = useRouter();
-  const { category, type } = query
-
-  useEffect(() => {
-    if(!isReady) {return}
-    getProducts()
-  }, [isReady])
-
-  const getProducts = () => {
-    axios.get(GET_PRODUCTS).then(res => {
-      setProducts(res.data)
-    })
-  }
 
   const searchProducts = () => {
     axios.post(SEARCH_PRODUCTS, query).then(res => {
