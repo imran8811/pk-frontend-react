@@ -1,33 +1,16 @@
-import { FC, useEffect, useState } from "react"
-import cls from 'classnames'
-import styles from './shop.module.css'
-import axios from "axios"
-import { GET_PRODUCT_DETAILS, basePath } from "../../endpoints"
+import { FC } from "react"
+import { basePath } from "../../endpoints"
 import { Product } from "../../models"
-import { useRouter } from "next/dist/client/router";
 
-const ProductDetails : FC = () => {
-  const [productDetails, setProductDetails] = useState<Product[]>();
-  const router = useRouter();  
-  const { query, isReady } = useRouter();
-  const { productId } = query;
+const ProductDetails : FC = (props:any) => {
 
-  useEffect(() => {
-    if(!isReady) {return}
-    getProductDetails()
-  }, [isReady])
-
-  const getProductDetails = () => {
-    axios.get(GET_PRODUCT_DETAILS+'/'+productId).then(res => {
-      setProductDetails(res.data)
-    })
-  }
+  const productDetails = (props.data);
 
   return (
-    <div className="row mb-5">
-      {productDetails && productDetails.map(product => {
+    <div className="mb-5">
+      {productDetails && productDetails.map((product, index) => {
         return (
-          <>
+          <div className="row" key={index}>
             <div className="col-lg-6">
               <img src={basePath+product.product_images.path+"/"+product.product_images.name} alt={product.product_images.name} />
             </div>
@@ -86,7 +69,7 @@ const ProductDetails : FC = () => {
                 <button type="button" className="btn btn-primary">Order Now</button>
               </div>
             </div>
-          </>
+          </ div>
         )        
       })}
     </div>

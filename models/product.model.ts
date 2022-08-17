@@ -13,5 +13,8 @@ export type Product = {
   category : string,
   type : string,
   length : string,
-  product_images : ProductImages
+  product_images : ProductImages,
+  props : {
+    data: {}
+  }
 }

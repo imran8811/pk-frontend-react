@@ -111,7 +111,6 @@ const Shop : FC = () => {
                       height="370"
                       className={styles.img} />
                   </a>
-                  <h2>Test</h2>
                   <a href={"/wholesale-shop/product-details/"+product.article_no} className="d-block text-center">Article# {product.article_no}</a>
                 </div>
               )
